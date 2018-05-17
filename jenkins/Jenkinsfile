@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Findbugs') {
             steps {
-                sh mvn findbugs:findbugs
+                sh 'mvn findbugs:findbugs'
             }
         }
         stage('Test') {
