@@ -11,7 +11,7 @@ pipeline {
                 sh 'mvn -B -DskipTests clean package'
             }
         }
-        stage('SAST') {
+        stage('Findbugs') {
             steps {
                 sh mvn findbugs:findbugs
             }
