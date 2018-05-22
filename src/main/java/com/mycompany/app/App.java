@@ -6,6 +6,11 @@ package com.mycompany.app;
 public class App
 {
 
+    int x;
+    public void foo() {
+        x = x;
+    }
+
     private final String message = "Hello Wakanda!";
 
     public App() {}
