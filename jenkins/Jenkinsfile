@@ -14,6 +14,8 @@ pipeline {
         stage('SCA') {
             steps {
                 sh 'mvn findbugs:findbugs'
+                findbugs canComputeNew: false, defaultEncoding: '', excludePattern: '', healthy: '',
+                includePattern: '', isRankActivated: true, pattern: '**/findbugsXml.xml', unHealthy: ''
             }
         }
         stage('Test') {
