@@ -11,7 +11,7 @@ pipeline {
                 sh 'mvn -B -DskipTests clean package'
             }
         }
-        stage('Findbugs') {
+        stage('SCA') {
             steps {
                 sh 'mvn findbugs:findbugs'
             }
