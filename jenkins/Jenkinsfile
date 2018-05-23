@@ -21,7 +21,7 @@ pipeline {
                 }
             }
         }
-        stage('SCA') {
+        stage('SAST') {
             steps {
                 sh 'mvn findbugs:findbugs'
                 findbugs canComputeNew: false, defaultEncoding: '', excludePattern: '', healthy: '',
