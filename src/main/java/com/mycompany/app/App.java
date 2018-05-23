@@ -11,7 +11,7 @@ public class App
         x = x;
     }
 
-    private final String message = "Hello Wakanda!";
+    private final String message = "Hello Wakanda!!";
 
     public App() {}
 
