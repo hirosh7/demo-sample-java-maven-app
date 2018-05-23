@@ -35,7 +35,7 @@ public class AppTest
         App.main(null);
         try {
         } catch (AssertionError e) {
-            fail("\"message\" is not \"Hello Wakanda!\"");
+            fail("\"message\" is not \"Hello Wakanda!!\"");
         }
     }
 
